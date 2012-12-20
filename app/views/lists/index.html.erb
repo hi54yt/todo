@@ -12,9 +12,8 @@
 <% @lists.each do |list| %>
   <tr>
     <td><%= link_to "#{list.goal}", list_path(list) %></td>
-    <td>
+    <td style="text-align:center;">
       <i class=<%= "#{ list.condition == 'true' ? 'icon-ok' : 'icon-remove' }" %>></i>
-      
     </td>
     <!-- <td><i class="icon-ok"</i></td> -->
     
